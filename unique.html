@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // build a new arr to storage the item of the old array
+        //  indexOf function to check the new array contains the item or not
+        function unquie(arr) {
+            var newArray = []
+            for (i =0; i< arr.length; i++) {
+                
+                if(newArray.indexOf(arr[i]) === -1){
+                    newArray.push(arr[i])
+                }
+            }
+            return newArray
+        }
+
+        var test = unquie(['a','b', 'c', 'd', 'a'])
+        console.log(test)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
